@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeColor(){
+            let h1Ref=document.getElementById("h1");
+            let p1Ref=document.getElementById("p1");
+            let p2Ref=document.getElementById("p2");
+            h1Ref.innerText="green lorem";
+            h1Ref.style.color="green"
+            p1Ref.style.backgroundColor="darkgreen";
+            p1Ref.style.color="white";
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1 id="h1">Lorem</h1>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, facere reiciendis autem voluptate, ullam aliquid asperiores voluptatibus expedita illum ipsam doloribus consectetur sunt quia vero, culpa rem. Voluptates nisi voluptas et! Voluptatem qui aut optio praesentium provident, atque, error harum facere laborum iure amet ea placeat, quis culpa officiis aliquam dolorum quibusdam! Suscipit, ex.</p>
+        <p id="p2">Lorem ipsum dolor sit.</p>
+        <button onclick="changeColor()">Change Color </button>
+    </div>
+</body>
+</html>

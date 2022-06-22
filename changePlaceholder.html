@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeText(){
+            let h1Ref=document.getElementById("h1");
+            let inpRef= document.getElementById("inp");
+            let inpPlace=inpRef.placeholder;
+            console.log(inpPlace);
+            inpRef.placeholder="its gone"
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1 id="h1">Lorem</h1>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, facere reiciendis autem voluptate, ullam aliquid asperiores voluptatibus expedita illum ipsam doloribus consectetur sunt quia vero, culpa rem. Voluptates nisi voluptas et! Voluptatem qui aut optio praesentium provident, atque, error harum facere laborum iure amet ea placeat, quis culpa officiis aliquam dolorum quibusdam! Suscipit, ex.</p>
+        <p id="p2">Lorem ipsum dolor sit.</p>
+        <input type="text" placeholder="here lies" name="inp" id="inp">
+        <button onclick="changeText()">Change Text</button>
+    </div>
+</body>
+</html>
