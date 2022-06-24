@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function showh(){
+            let docRef=document.querySelector("div")
+            let inpRef=document.getElementById("inp");
+            let hRef=document.createElement("h2");
+            hRef.innerText=inpRef.value;
+            docRef.appendChild(hRef)
+        }
+    </script>
+    <style>
+        div{
+            box-shadow: 0 0 10px black;
+            width:231px;
+            padding: 20px;
+            margin: 250px auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="this" id="inp">
+        <button onclick="showh()" id="btn">Show</button>
+    </div>
+</body>
+</html>

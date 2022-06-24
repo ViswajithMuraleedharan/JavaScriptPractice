@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+
+        let olRef=document.createElement("ol");
+        function showh(){
+            let docRef=document.querySelector("div")
+            let inpRef=document.getElementById("inp");
+            let liRef=document.createElement("li");
+            olRef.appendChild(liRef);
+            liRef.innerText=inpRef.value;
+            docRef.appendChild(olRef);
+        }
+    </script>
+    <style>
+        div{
+            box-shadow: 0 0 10px black;
+            width:231px;
+            padding: 20px;
+            margin: 250px auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="this" id="inp">
+        <button onclick="showh()" id="btn">Show</button>
+    </div>
+</body>
+</html>

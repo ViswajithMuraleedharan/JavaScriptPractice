@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function showh(){
+            let inpRef=document.getElementById("inp");
+            let hRef=document.getElementById("h");
+            hRef.innerText=inpRef.value;
+        }
+    </script>
+    <style>
+        div{
+            box-shadow: 0 0 10px black;
+            width:231px;
+            padding: 20px;
+            margin: 250px auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="this" id="inp">
+        <button onclick="showh()" id="btn">Show</button>
+        <h2 id="h"></h2>
+    </div>
+</body>
+</html>
